@@ -1,0 +1,286 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+  <!-- CSS: implied media="all" -->
+  <link rel="stylesheet" href="css/style.css?v=2">
+
+  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
+  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr-1.7.min.js"></script>
+
+</head>
+
+<body>
+
+  <a href="http://github.com/mrkschan/html5-resume">
+    <img alt="Fork me on GitHub" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" style="position: absolute; top: 0; right: 0; border: 0;">
+  </a>
+  <div id="container" class="container">
+    <header>
+      <div>
+        <h1>Ka-shing Chan</h1>
+        <h2>Software Engineer / Web Developer</h2>
+      </div>
+      <ul>
+        <li>Email - mrkschan [at] gmail dot com</li>
+        <li>Phone - (+852) xxxx-xxxx</li>
+        <li>Language - Cantonese, English, Mandarin</li>
+      </ul>
+      <p>
+      <!-- TODO: write a nice objective/summary later -->
+      Beautiful is better than ugly.
+      Explicit is better than implicit.
+      Simple is better than complex.
+      Complex is better than complicated.
+      Flat is better than nested.
+      Sparse is better than dense.
+      Readability counts.
+      Special cases aren't special enough to break the rules.
+      Although practicality beats purity...
+      </p>
+    </header>
+    <div id="main" role="main">
+      <article>
+        <section id="skills">
+          <!--
+          Skills, in three levels.
+          Simply remove the #tagcloud div if you prefer not having a tag cloud.
+          (see js/script.js section - Skills Tag-cloud)
+          -->
+          <h1>Skills</h1>
+          <div id="tagcloud"
+               data-min-font-size="12"
+               data-max-font-size="24"></div>
+          <h2>Advanced</h2>
+          <ul>
+            <li>Python</li>
+            <li>Django</li>
+            <li>Scrapy</li>
+            <li>Fabric</li>
+            <li>jQuery</li>
+          </ul>
+          <h2>Intermediate</h2>
+          <ul>
+            <li>Ubuntu</li>
+            <li>ExtJs</li>
+            <li>Git</li>
+            <li>SVN</li>
+            <li>PHP</li>
+            <li>Vim</li>
+            <li>Blueprint CSS</li>
+          </ul>
+          <h2>Elementary</h2>
+          <ul>
+            <li>Amazon AWS</li>
+            <li>Facebook SDK</li>
+            <li>Android SDK</li>
+            <li>JavaSE/EE</li>
+            <li>C/C++</li>
+            <li>Apache</li>
+            <li>Ngnix</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>SQLite</li>
+            <li>PyGTK</li>
+            <li>Ant</li>
+            <li>HTML5</li>
+            <li>Twisted</li>
+            <li>Selenium</li>
+            <li>Eclipse RCP</li>
+            <li>Web.py</li>
+          </ul>
+        </section>
+
+        <section id="experience"> <!-- Experience -->
+          <h1>Experience</h1>
+          <div>
+            <h2>Wooyatech Limited</h2>
+            <p><time datetime="2010-11">November 2010</time>
+             - Present</p>
+            <h3>Software Engineer</h3>
+            <ul>
+              <li>
+                Engineering with Python most of the time.
+              </li>
+              <li>
+                Started to believe in "Simple is better than complex, and Flat is better than nested".
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>City University of Hong Kong</h2>
+            <p><time datetime="2009-10">October 2009</time>
+             - <time datetime="2010-09">September 2010</time></p>
+            <h3>Research Assistant</h3>
+            <ul>
+              <li>
+                Developed a Eclipse plug-in that
+                extracts HTML elements via Website Parse Template.
+              </li>
+              <li>
+                Developed a repository of learning objects for teaching
+                and learning purpose, and explored MongoDB.
+              </li>
+              <li>
+                Developed some teaching materials in computer security
+                (especially web related security issues).
+              </li>
+              <li>
+                Published papers to international conferences for e-Learning.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Google Inc.</h2>
+            <p><time datetime="2009-06">June 2009</time>
+             - <time datetime="2009-09">September 2009</time></p>
+            <h3>Google Summer of Code - Student</h3>
+            <ul>
+              <li>
+                Assisted the PHP Documentation Team to re-factor the
+                PHP Manual Online Editor (https://edit.php.net/).
+              </li>
+              <li>
+                Assisted the adoption of Subversion (cvs2svn migration)
+                by developing a SVN client module for the editor.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Sun Microsystems, Inc.</h2>
+            <p><time datetime="2008-02">February 2008</time>
+             - <time datetime="2009-01">January 2009</time></p>
+            <h3>Student Ambassador</h3>
+            <ul>
+              <li>
+                Started a campus-based technology focus group with 30+ members.
+              </li>
+              <li>
+                Conducted 5 workshops with different technology foci -
+                Java VM, Java SE6, JavaFX, jMaki, OpenSolaris.
+              </li>
+              <li>
+                Assisted the Sun Cert Day 2008 (HK) and
+                held a booth for demonstrating OpenSolaris to 20+ audiences.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>HSBC</h2>
+            <p><time datetime="2007-09">September 2007</time>
+             - <time datetime="2008-06">June 2008</time></p>
+            <h3>Student Intern</h3>
+            <ul>
+              <li>
+                Assisted oversea ATM server testing and bug fixing,
+                and administration of the maintenance log.
+              </li>
+              <li>
+                Developed in-house utilities:
+                a maintenance log beautifier and a knowledge sharing wiki.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>JiJiJa, Inc.</h2>
+            <p><time datetime="2007-06">June 2007</time>
+             - <time datetime="2007-09">September 2007</time></p>
+            <h3>Student Intern</h3>
+            <ul>
+              <li>
+                Developed a demo web store for
+                illustrating an Ads-to-User match engine.
+              </li>
+              <li>
+                Developed a set of automated tests with
+                the Sahi testing tool for an Ajax-backed forum.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="education"> <!-- Education -->
+          <h1>Education</h1>
+          <div>
+            <h2>MSc Computer Science, Distinction Award</h2>
+            <p><time>2010</time></p>
+            <span>City University of Hong Kong</span>
+          </div>
+          <div>
+            <h2>BSc (Hons) Computer Science, First Class Honours Award</h2>
+            <p><time>2009</time></p>
+            <span>City University of Hong Kong</span>
+          </div>
+          <div>
+            <h2>Hong Kong Advanced Level Examination</h2>
+            <p><time>2004</time></p>
+            <span>St. Bonaventure College &amp; High School</span>
+          </div>
+          <div>
+            <h2>Hong Kong Certificate of Education Examination</h2>
+            <p><time>2002</time></p>
+            <span>St. Bonaventure College &amp; High School</span>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <footer>
+
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts-->
+
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+
+  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+    s.parentNode.insertBefore(g,s)}(document,"script"));
+  </script>
+
+</body>
+</html>
