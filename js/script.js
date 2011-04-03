@@ -112,6 +112,7 @@
     if (search.indexOf('format=print') == -1) {
       return;
     }
+    $('#ribbon').hide();
     $('#printer').hide();
     $('a').each(function() {
       $(this).html($(this).attr('href'));
