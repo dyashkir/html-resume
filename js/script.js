@@ -2,6 +2,11 @@
 - KS Chan (mrkschan@gmail.com)
 */
 
+function __is_print() {
+  var search = window.location.search;
+  return (search.indexOf('format=print') > -1);
+}
+
 // Skills Tag-cloud
 (function($) {
   var skills = $('#skills'),
@@ -57,8 +62,8 @@
       return $(a).attr('text').toLowerCase() > $(b).attr('text').toLowerCase();
     });
 
-    $(h2).hide();
-    $(ul).hide();
+    $(h2).addClass('hidden');
+    $(ul).addClass('hidden');
 
     $(tags).each(function(idx, el) {
       $(container).append($('<span />', {
@@ -79,12 +84,12 @@
 // Content layout
 (function($) {
   $(document).ready(function() {
-    var education = $('#education div'),
-        experience = $('#experience div'),
+    var education = $('#education > div'),
+        experience = $('#experience > div'),
         footer = $('footer'),
         header = $('header');
 
-    $('section div').addClass('span-24 last');
+    $('section > div').addClass('span-24 last');
 
     $('h2', experience).addClass('span-12 append-7');
     $('p', experience).addClass('span-5 last');
@@ -108,12 +113,13 @@
 // Printing
 (function ($) {
   $(document).ready(function() {
-    var search = window.location.search;
-    if (search.indexOf('format=print') == -1) {
+    if (false == __is_print()) {
       return;
     }
-    $('#ribbon').hide();
-    $('#printer').hide();
+
+    $('#ribbon').addClass('hidden');
+    $('#printer').addClass('hidden');
+
     $('a').each(function() {
       $(this).html($(this).attr('href'));
     });
