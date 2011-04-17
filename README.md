@@ -16,6 +16,7 @@ Sample - [http://mrkschan.github.com/html5-resume/](http://mrkschan.github.com/h
 * http://html5boilerplate.com/ - The starting kit of this stuff.
 * http://www.blueprintcss.org/ - A css framework with easy-to-use grid.
 * https://github.com/addywaddy/jquery.tagcloud.js - A Simple Tag Cloud Plugin for JQuery.
+* http://www.madeincima.eu/blog/jquery-plugin-easy-accordion/ - A jQuery accordion plugin.
 
 
 # Build step...
@@ -36,3 +37,5 @@ For the licenses of the great works that html5boilerplate is composed of, please
 blueprintcss - MIT License (https://github.com/joshuaclayton/blueprint-css/blob/master/LICENSE)
 
 jquery.tagcloud.js - MIT License (https://github.com/addywaddy/jquery.tagcloud.js/blob/master/LICENSE)
+
+jquery.easyAccordion.js - MIT License, Copyright (c) 2010 Andrea Cima Serniotti (http://www.madeincima.eu)
