@@ -80,6 +80,57 @@ function __is_print() {
   cloudify();
 })(jQuery);
 
+// Experience-accordion
+(function($) {
+  var container = $('#expaccordion');
+
+  if (container.length < 1) {
+    // skip if no #expaccordion div
+    return;
+  }
+
+  if (__is_print()) {
+    $(container).remove();
+    return;
+  }
+
+  function accordionify() {
+    var dl = $('<dl />', {'class': 'span-24 last'}),
+        experience = $('#experience > div').not('#expaccordion'),
+        height = 310, height_def = $(container).attr('data-height'),
+        width = 570, width_def = $(container).attr('data-width'),
+        div, dd, dt, h2, h3;
+
+    if (height_def) {
+      height = parseInt(height_def);
+    }
+    if (width_def) {
+      width = parseInt(width_def);
+    }
+
+    $(dl).height(height);
+    $(experience).width(width);
+
+    for (var i = 0; i < experience.length; ++i) {
+      div = experience[i];
+      dt = $('<dt />');
+      dd = $('<dd />');
+      h2 = $('h2', div);
+      h3 = $('h3', div);
+
+      $(dt).html($('<div />', {'html': $(h2).html()}));
+
+      $(dd).append(div);
+      $(dl).append(dt)
+           .append(dd);
+    }
+    $(container).append(dl)
+                .appendTo($('#experience'));
+    $(container).easyAccordion({slideNum: false});
+  }
+  accordionify();
+})(jQuery);
+
 // Content layout
 (function($) {
   $(document).ready(function() {
