@@ -35,14 +35,29 @@
 </head>
 
 <body>
-
   <a id="ribbon" href="http://github.com/mrkschan/html5-resume">
     <img alt="Fork me on GitHub" src="http://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;">
   </a>
+  <nav>
+    <ul>
+      <li>
+        <a href="#anchor_me" class="anchorLink">Me</a>
+      </li>
+      <li>
+        <a href="#anchor_skills" class="anchorLink">Skills</a>
+      </li>
+      <li>
+        <a href="#anchor_experience" class="anchorLink">Experience</a>
+      </li>
+      <li>
+        <a href="#anchor_education" class="anchorLink">Education</a>
+      </li>
+    </ul>
+  </nav>
   <div id="container" class="container">
     <header>
       <div>
-        <h1>Ka-shing Chan</h1>
+        <h1><a name="anchor_me" id="anchor_me">Ka-shing Chan</a></h1>
         <h2>Software Engineer / Web Developer</h2>
       </div>
       <ul>
@@ -72,7 +87,9 @@
           Simply remove the #tagcloud div if you prefer not having a tag cloud.
           (see js/script.js section - Skills Tag-cloud)
           -->
-          <h1>Skills</h1>
+          <h1>
+            <a name="anchor_skills" id="anchor_skills">Skills</a>
+          </h1>
           <div id="tagcloud"
                data-min-font-size="11"
                data-max-font-size="24"></div>
@@ -91,6 +108,8 @@
             <li>Git</li>
             <li>SVN</li>
             <li>PHP</li>
+            <li>JavaSE/EE</li>
+            <li>C/C++</li>
             <li>Vim</li>
             <li>Blueprint-CSS</li>
           </ul>
@@ -100,8 +119,6 @@
             <li>Eucalyptus</li>
             <li>Facebook-SDK</li>
             <li>Android-SDK</li>
-            <li>JavaSE/EE</li>
-            <li>C/C++</li>
             <li>Apache</li>
             <li>Ngnix</li>
             <li>MySQL</li>
@@ -117,7 +134,9 @@
         </section>
 
         <section id="experience"> <!-- Experience -->
-          <h1>Experience</h1>
+          <h1>
+            <a name="anchor_experience" id="anchor_experience">Experience</a>
+          </h1>
           <div>
             <h2>Wooyatech Limited</h2>
             <p><time datetime="2010-11">November 2010</time>
@@ -233,7 +252,9 @@
         </section>
 
         <section id="education"> <!-- Education -->
-          <h1>Education</h1>
+          <h1>
+            <a name="anchor_education" id="anchor_education">Education</a>
+          </h1>
           <div>
             <h2>MSc Computer Science, Distinction Award</h2>
             <p><time>2010</time></p>

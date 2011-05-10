@@ -7,6 +7,7 @@ function __is_print() {
   return (search.indexOf('format=print') > -1);
 }
 
+
 // Skills Tag-cloud
 (function($) {
   var container = $('#tagcloud');
@@ -68,7 +69,7 @@ function __is_print() {
       $(container).append($('<span />', {
         'style': 'display: inline-block; margin: 0 5px;',
         'html': $(el).attr('text'),
-        'rel': $(el).attr('rel'),
+        'rel': $(el).attr('rel')
       }));
     });
     $(container).appendTo(skills);
@@ -79,6 +80,15 @@ function __is_print() {
   }
   cloudify();
 })(jQuery);
+
+
+// Scroll to anchor
+(function($) {
+  $(document).ready(function() {
+    $("a.anchorLink").anchorAnimate({speed: 500});
+  });
+})(jQuery);
+
 
 // Content layout
 (function($) {
@@ -118,8 +128,8 @@ function __is_print() {
 
     $('#ribbon').addClass('hidden');
     $('#printer').addClass('hidden');
-
-    $('a').each(function() {
+    $('nav').addClass('hidden');
+    $('a:not(h1 > a)').each(function() {
       $(this).html($(this).attr('href'));
     });
     $('ul', $('footer')).addClass('span-24 last');
