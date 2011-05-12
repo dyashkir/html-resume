@@ -82,10 +82,11 @@ function __is_print() {
 })(jQuery);
 
 
-// Scroll to anchor
+// Scroll to anchor & sidebar nav
 (function($) {
   $(document).ready(function() {
     $("a.anchorLink").anchorAnimate({speed: 500});
+    $('nav ul').transform({rotate: '90deg', origin: ['0px', '35px']});
   });
 })(jQuery);
 
@@ -103,6 +104,7 @@ function __is_print() {
     $('h2', experience).addClass('span-12 append-7');
     $('p', experience).addClass('span-5 last');
     $('h3', experience).addClass('span-24 last');
+    $('ul', experience).addClass('span-24 last');
 
     $('h2', education).addClass('span-12 append-7');
     $('p', education).addClass('span-5 last');
