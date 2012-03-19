@@ -74,7 +74,7 @@ function __is_print() {
     });
     $(container).append($('<div />', {
       'class': 'prepend-16 span-8 last',
-      'html': '(The bigger the name, the longer time I spent in...)'
+      'html': ''
     }));
     $(container).appendTo(toys);
 
